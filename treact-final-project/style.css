@@ -13,6 +13,11 @@ body {
     overflow-x: hidden;
 }
 
+.menu--open {
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
 a {
     text-decoration: none;
     display: inline;
@@ -32,8 +37,6 @@ p {
 
 img {
     width: 100%;
-    overflow-clip-margin: content-box;
-    overflow: clip;
 }
 
 
@@ -1342,7 +1345,6 @@ footer {
     width: 16px;
 }
 
-
 /* 
 
 MOBILE RESPONSIVENESS ↓
@@ -1420,6 +1422,10 @@ MOBILE RESPONSIVENESS ↓
     #start .container {
         padding-top: 5rem;
         padding-bottom: 5rem;
+    }
+
+    .nav__links {
+        display: none;
     }
 
     .section__para {
@@ -1616,8 +1622,7 @@ MOBILE RESPONSIVENESS ↓
     }
 
     .footer__bottom {
-        display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
     }
 
@@ -1650,6 +1655,7 @@ MOBILE RESPONSIVENESS ↓
     .container {
         padding: 80px 0;
     }
+
     .nav__logo {
         margin: 8px 0;
         padding-bottom: 4px;
